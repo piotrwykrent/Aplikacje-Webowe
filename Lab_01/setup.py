@@ -19,7 +19,7 @@ html_template = """
  <h1>Welcome to My Website</h1>
  </main>
  <script src="index.js"></script>
- </body>
+ </body>git
 </html>
 """
 # writing the code into the file
