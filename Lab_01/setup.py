@@ -19,7 +19,7 @@ html_template = """
  <h1>Welcome to My Website</h1>
  </main>
  <script src="index.js"></script>
- </body>git
+ </body>
 </html>
 """
 # writing the code into the file
@@ -37,7 +37,7 @@ body {
  height: 100vh;
  margin: 0;
 }
-main-container {
+.main-container {
  height: 100%;
  display: flex;
  align-items: center;

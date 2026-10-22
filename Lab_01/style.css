@@ -6,13 +6,46 @@ body {
   height: 100vh;
   margin: 0;
 }
-main-container {
-  height: 100%;
+.main-container {
+  height: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .student {
   color: red;
-  text-align: center;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.blok1,
+.blok2,
+.blok3,
+.blok4,
+.obr {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+.blok1 {
+  background-color: blueviolet;
+}
+.blok2 {
+  background-color: deeppink;
+}
+.blok3 {
+  background-color: aqua;
+}
+.blok4 {
+  background-color: lawngreen;
+}
+.wiersz {
+  display: flex;
+  background-color: transparent;
 }
