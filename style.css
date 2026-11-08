@@ -7,7 +7,33 @@ body {
   color: #f2efe7;
   margin: 0;
 }
+.o-mnie {
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
 
+.o-mnie-kontener {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.zdjecie-profilowe {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.o-mnie-tekst {
+  flex: 1;
+  min-width: 280px;
+}
 nav {
   background-color: #071b2b;
   display: flex;
