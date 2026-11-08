@@ -9,11 +9,58 @@
   <body>
     <nav>
       <a href="index.html">Strona Główna</a>
-      <a href="szczyty.html">Szczyty</a>
+      <a href="wyprawy.html">Wyprawy</a>
+      <a href="kontakt.html">Kontakt</a>
     </nav>
-    <main class="main-container"></main>
+    <main class="main-container">
+      <h1>Kontakt</h1>
+      <div class="kontakt">
+        <div class="kontakt-zdjecie">
+          <h2>Do zobaczenia na szlaku!</h2>
+          <p>
+            Masz pytanie o sprzęt, szukasz towarzysza do wspinaczki, a może
+            chcesz polecić ciekawą trasę? Napisz do mnie – z przyjemnością
+            wymienię się górskimi doświadczeniami!
+          </p>
+          <img src="kontakt.png" alt="kontakt" id="img-kontakt" />
+        </div>
+        <div class="kontakt-info">
+          <form novalidate>
+            <label for="imie">Imię:</label>
+            <input
+              type="text"
+              name="imie"
+              id="imie"
+              placeholder="Wpisz swoje imię:"
+            />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Wpisz swój email:"
+            />
+            <label for="temat">Temat wiadomości:</label>
+            <select id="temat" name="temat">
+              <option value="" disabled selected hidden>
+                Wybierz temat...
+              </option>
+              <option value="sprzet">Pytanie o polecany sprzęt górski</option>
+              <option value="wspinanie">Wspólna wspinaczka</option>
+              <option value="doswiaczenie">Wymiana doświadczeń</option>
+              <option value="trasa">Trasa do polecenia</option>
+              <option value="inny">Inny temat</option>
+            </select>
+            <label for="wiadomosc">Wiadomość:</label>
+            <textarea id="wiadomosc" placeholder="Wpisz wiadomość"></textarea>
+            <button type="submit">Wyślij</button>
+          </form>
+        </div>
+      </div>
+    </main>
     <footer>
       <h2 style="text-align: center">Piotr Wykrent</h2>
     </footer>
+    <script src="skrypt.js"></script>
   </body>
 </html>

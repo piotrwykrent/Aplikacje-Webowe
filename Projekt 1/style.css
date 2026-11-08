@@ -1,15 +1,283 @@
-
-html {
- background-color: #DDBEAA;
- height: 100vh;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+html,
 body {
- height: 100vh;
- margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  background-color: #3368a0;
+  color: #f2efe7;
+  margin: 0;
 }
+
+nav {
+  background-color: #071b2b;
+  display: flex;
+  width: 50%;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 40px auto;
+  gap: 70px;
+  padding: 25px 0;
+}
+
+nav a {
+  color: #f2efe7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .main-container {
- height: 100%;
- display: flex;
- align-items: center;
- justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 50px;
+  color: #c8dfdb;
+  border-bottom: 4px solid #66a3bf;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+.kontakt {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 50px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.kontakt-zdjecie,
+.kontakt-info {
+  flex: 1;
+}
+
+.kontakt-zdjecie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kontakt-zdjecie h2 {
+  color: #c8dfdb;
+  margin-top: 0;
+}
+
+.kontakt-zdjecie p {
+  color: #f2efe7;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.kontakt-zdjecie img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+form {
+  background-color: #66a3bf;
+  border-radius: 15px;
+  padding: 23px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  color: #f2efe7;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  background-color: #c8dfdb;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #071b2b;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button {
+  background-color: #071b2b;
+  color: #f2efe7;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer {
+  background-color: #071b2b;
+  padding: 30px 0;
+  margin-top: 60px;
+  border-top: 3px solid #66a3bf;
+  width: 100%;
+}
+
+footer h2 {
+  color: #c8dfdb;
+  font-size: 20px;
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: "Roboto Slab", serif;
+}
+
+.kategoria {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+}
+
+.kategoria h2 {
+  color: #c8dfdb;
+  border-bottom: 3px solid #66a3bf;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.kategoria-zdjecia {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.karta {
+  background-color: #071b2b;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.karta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.karta img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.karta p {
+  color: #f2efe7;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px 0 5px 0;
+  letter-spacing: 1px;
+}
+
+.kategoria-filmy {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.karta-film {
+  width: 313px;
+  background-color: #071b2b;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.karta-film:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.karta-film p {
+  color: #f2efe7;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px 0 5px 0;
+  letter-spacing: 1px;
+}
+
+.karta-film video,
+.karta-film iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: #000;
+  border: none;
+}
+
+@media (max-width: 800px) {
+  nav {
+    width: 80%;
+    gap: 30px;
+  }
+
+  .kontakt {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kategoria-zdjecia {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .karta-film {
+    width: 45%;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    width: 95%;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  .kategoria-zdjecia {
+    grid-template-columns: 1fr;
+  }
+
+  .kategoria-filmy {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .karta-film {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
 }
