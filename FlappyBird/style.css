@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #87ceeb;
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-container {
+  text-align: center;
+}
+
+.game-title {
+  margin: 0 0 16px 0;
+  font-family: "Press Start 2P", "Courier New", monospace;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    0 -2px 0 #000,
+    0 2px 0 #000,
+    -2px 0 0 #000,
+    2px 0 0 #000,
+    0 5px 0 #000;
+}
+
+#gameCanvas {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #000;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  background-color: #70c5ce;
+}
+
+.controls-hint {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #3a2b20;
+}
+
+.badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 11px;
+}
+
+.badge.ghost {
+  background-color: #00b4d8;
+}
+
+.badge.ff {
+  background-color: #f77f00;
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <h2 id="czas">0s</h2>
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div class="generator-container">
+        <h2>Generator haseł</h2>
+        <div>
+          <label>Min długość:</label>
+          <input type="number" id="minLength" value="8" />
+        </div>
+        <div>
+          <label>Max długość:</label>
+          <input type="number" id="maxLength" value="12" />
+        </div>
+        <div>
+          <label>Wielkie litery:</label>
+          <input type="checkbox" id="uppercase" />
+        </div>
+        <div>
+          <label>Znaki specjalne:</label>
+          <input type="checkbox" id="specialChars" />
+        </div>
+        <button id="generate">Wygeneruj hasło</button>
+      </div>
+      <br /><br />
+      <hr />
+      <br /><br />
+      <div class="api-container">
+        <input type="text" id="fraza" placeholder="Wyszukaj produkt..." />
+        <select id="filtrowanie">
+          <option value="orginal">Orginalna kolejnosc</option>
+          <option value="asc">Rosnąco</option>
+          <option value="desc">Malejąco</option>
+        </select>
+      </div>
+      <br />
+      <table class="products-table">
+        <thead>
+          <tr>
+            <th>Zdjęcie</th>
+            <th>Tytuł</th>
+            <th>Opis</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
